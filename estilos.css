@@ -4,7 +4,7 @@ body{
 }
 header{
     height: 10%;
-    background-color: #424242;
+    background-color: #282727;
     color: white;
     display: flex;
     align-items: center;
@@ -28,36 +28,34 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: calc(93vh - 65px);   
+    height: min-content;   
 }
 
-.caja-central{
+.caja-central {
     margin-top: 6%;
-    width: 50%;
+    width: 80%; /* Usar el 100% del ancho disponible */
     display: flex;
-    flex-direction: row;
+    flex-direction: column; /* Cambiar a columna para que los elementos se apilen verticalmente en pantallas más pequeñas */
     border-radius: 20px;
     overflow: hidden;
-    height: 70%;
     border: solid #000000 2px;
     margin: 8px;
 }
-.caja-cara{
+
+.caja-cara {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    background-color: #424242;
+    background-color: #282727;
     border: solid #000000 2px;
+    height: 200px; /* Altura fija, ajustar según tus necesidades */
 }
-.caja-presentacion{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
+
+.caja-presentacion {
     background-color: #F2F2F2;
     color: #000000;
     padding: 10px 50px 20px;
+    flex: 1; /* Ocupar el espacio restante dentro de caja-central */
 }
 
 .dos{
@@ -181,7 +179,7 @@ footer{
         height: auto;
         align-items: flex-start;
         padding: 10px 50px 35px;
-        font-size: 0.53em;
+        font-size: 1em;
     }
     .aptitudes{
         width: auto;
